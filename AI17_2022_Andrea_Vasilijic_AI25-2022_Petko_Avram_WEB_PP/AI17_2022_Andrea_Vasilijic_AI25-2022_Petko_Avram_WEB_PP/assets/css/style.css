@@ -1,0 +1,107 @@
+
+/* 
+  Autori: Andrea Vasilijic AI17-2022, Petko Avram AI25-2022
+*/
+@import url('https://fonts.googleapis.com/css2?family=Allison&family=Corinthia:wght@400;700&family=Crafty+Girls&family=Dancing+Script:wght@400..700&family=Delius&family=Gaegu&family=Homemade+Apple&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sacramento&family=Sevillana&display=swap');
+
+body {
+  padding-top: 70px; /* prostor za fiksnu navigaciju */
+  padding-bottom: 250px; /* prostor za fiksni footer */
+  font-family: "Raleway", sans-serif;
+  background: linear-gradient(180deg, #fffdfa 0%, #d982b9 100%);
+}
+
+/* Fiksni site-footer */
+.site-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 0;
+  text-align: center;
+  z-index: 1030;
+  font-family: "Delius";
+  color: white;
+  background-color: #d982b9;
+  opacity: 0.9;
+}
+
+/* Naslov */
+.blog-title {
+  font-family: "Delius";
+  font-weight: normal;
+  font-size: 2.2rem;
+  color: #545963;
+  text-shadow: 3px 5px 5px hotpink;
+}
+
+.colored-paragraph {
+  color: #545963; /* mutna siva-plava */
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.blog-list li a {
+  color: #ca8a4b;
+}
+
+.blog-list li a:hover {
+  font-size: 17px;
+}
+
+/* Kartice proizvoda */
+.product-card img {
+  max-height: 220px;
+  object-fit: cover;
+}
+
+.recipe-card img {
+  max-height: 550px;
+  object-fit: cover;
+}
+
+.recipepage-card img {
+  max-height: 300px;
+  object-fit: cover;
+}
+
+.card-text {
+  font-size: 20px;
+}
+
+/* Hover efekte za galeriju */
+.gallery-thumb {
+  overflow: hidden;
+  cursor: pointer;
+
+}
+.gallery-thumb img {
+  transition: transform 0.25s ease;
+  max-height: 300px;
+  object-fit: cover;
+}
+.gallery-thumb:hover img {
+  transform: scale(1.08);
+}
+
+.more-text { display: none; }
+@media(min-width: 768px) {
+  .more-text { display: inline; }
+}
+
+/* Navigacija hover */
+.navbar .nav-link:hover {
+  text-decoration: underline;
+}
+
+.navbar-brand img { border-radius: 6px; }
+
+.section-padding { padding: 40px 0; }
+
+.navbar-nav .nav-link:hover {
+  font-weight: bold;
+  color: hotpink;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}

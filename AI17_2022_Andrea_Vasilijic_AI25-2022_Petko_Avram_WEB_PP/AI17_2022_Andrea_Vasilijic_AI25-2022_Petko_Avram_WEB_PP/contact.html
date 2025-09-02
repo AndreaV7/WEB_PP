@@ -1,0 +1,128 @@
+<!--
+  Autori: Andrea Vasilijic AI17-2022, Petko Avram AI25-2022
+-->
+<!doctype html>
+<html lang="sr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cozy Cooking</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+  <!-- Bustrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Lokalni stilovi -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- Fiksna navigacija-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="assets/images/logo.png" width="40" alt="Logo" class="me-2">Cozy Cooking</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto">
+         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="onama.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="produkti.html">Orders</a></li>
+          
+          <li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" id="recipesDropdown" role="button" 
+     data-bs-toggle="dropdown" aria-expanded="false">
+    Recipes
+  </a>
+  <ul class="dropdown-menu" aria-labelledby="recipesDropdown">
+    <li><a class="dropdown-item" href="zucchinibites.html">Cheesy Garlic Zucchini Bites</a></li>
+    <li><a class="dropdown-item" href="bruschetta.html">Tomato and Basil Bruschetta</a></li>
+     <li><a class="dropdown-item" href="steak.html">Air Fryer Steak</a></li>
+    <li><a class="dropdown-item" href="lasagna.html">Easy Homemade Lasagna</a></li>
+    <li><a class="dropdown-item" href="cinnamonrolls.html">Extra Soft Cinnamon Rolls</a></li>
+    <li><a class="dropdown-item" href="cake.html">Strawberry Shortcake</a></li>
+    <li><a class="dropdown-item" href="cookies.html">Chocolate Chip Cookies</a></li>
+    <li><a class="dropdown-item" href="belmuz.html">Svrljiški Belmuž</a></li>
+    <li><a class="dropdown-item" href="pasta.html">Caramelized Onion Pasta</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="recepti.html">All Recipes</a></li>
+   
+  </ul>
+</li>
+
+          <li class="nav-item"><a class="nav-link" href="galerija.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container section-padding">
+
+<div class="row">
+  <div class="col-md-6">
+    <h2 class="blog-title">Contact Us</h2>
+    <p>Have a question, craving, or special request? We’d love to hear from you! Whether you need help placing an order, want to inquire about catering, or just want to say hello - our team is here and happy to help.</p>
+    <form>
+      <div class="mb-3">
+        <label for="name" class="form-label">Full Name</label>
+        <input id="name" class="form-control" type="text" placeholder="First and Last name">
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input id="email" class="form-control" type="email" placeholder="mail@domain.com">
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Message</label>
+        <textarea id="message" class="form-control" rows="4"></textarea>
+      </div>
+      <button class="btn btn-primary" type="button" onclick="alert('Thank you for reaching out to us! We’ve got your message and will be in touch soon.')">Send</button>
+    </form>
+  </div>
+  <div class="col-md-6">
+    <h5>Visit Us</h5>
+    <p>Location: 123 Flavor Street, Novi Sad</p>
+    <p>Phone Number: +381 60 123 45 67</p>
+    <p>Or fill out our contact form and we’ll get back to you as soon as we can!</p>
+  </div>
+</div>
+  </main>
+
+  <!-- Fiksni footer -->
+   <footer class="site-footer bg-dark text-white fst-italic fw-bold"> <!-- Nadebljan i nakrivljen text-->
+   <div class="container d-flex justify-content-between align-items-center">
+    <!-- Lijevo -->
+    <p class="mb-0">Contact: info@cozycooking.com</p>
+    
+    <!-- Desno -->
+    <div class="d-flex">
+      <p class="mb-0 me-3">AI25-2022 Petko Avram</p>
+      <p class="mb-0">AI17-2022 Andrea Vasilijic</p>
+    </div>
+  </div>
+  </footer>
+
+  <!-- Lightbox modal (koristi se na galeriji) -->
+  <div class="modal fade" id="lightboxModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 id="lightboxTitle" class="modal-title"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Zatvori"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img id="lightboxImage" src="" alt="" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS (CDN) + lokalni JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

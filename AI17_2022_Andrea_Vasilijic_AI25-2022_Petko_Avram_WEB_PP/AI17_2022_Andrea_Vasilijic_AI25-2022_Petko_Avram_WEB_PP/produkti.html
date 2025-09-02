@@ -1,0 +1,173 @@
+<!--
+  Autori: Andrea Vasilijic AI17-2022, Petko Avram AI25-2022
+-->
+<!doctype html>
+<html lang="sr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cozy Cooking</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Lokalni stilovi -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- Fiksna navigacija-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="assets/images/logo.png" width="40" alt="Logo" class="me-2">Cozy Cooking</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="onama.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="produkti.html">Orders</a></li>
+          
+          <li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" id="recipesDropdown" role="button" 
+     data-bs-toggle="dropdown" aria-expanded="false">
+    Recipes
+  </a>
+  <ul class="dropdown-menu" aria-labelledby="recipesDropdown">
+    <li><a class="dropdown-item" href="zucchinibites.html">Cheesy Garlic Zucchini Bites</a></li>
+    <li><a class="dropdown-item" href="bruschetta.html">Tomato and Basil Bruschetta</a></li>
+     <li><a class="dropdown-item" href="steak.html">Air Fryer Steak</a></li>
+    <li><a class="dropdown-item" href="lasagna.html">Easy Homemade Lasagna</a></li>
+    <li><a class="dropdown-item" href="cinnamonrolls.html">Extra Soft Cinnamon Rolls</a></li>
+    <li><a class="dropdown-item" href="cake.html">Strawberry Shortcake</a></li>
+    <li><a class="dropdown-item" href="cookies.html">Chocolate Chip Cookies</a></li>
+    <li><a class="dropdown-item" href="belmuz.html">Svrljiški Belmuž</a></li>
+    <li><a class="dropdown-item" href="pasta.html">Caramelized Onion Pasta</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="recepti.html">All Recipes</a></li>
+   
+  </ul>
+</li>
+
+          <li class="nav-item"><a class="nav-link" href="galerija.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container section-padding">
+
+<h2 class="blog-title">Place your order</h2>
+<p>We appreciate every bite you share with us - That’s why every 5th order earns you <b>20% off</b> the full price!
+No sign-ups or coupons needed. We’ll track it for you and automatically apply your discount.</p>
+
+<div class="table-responsive">
+  <table class="table align-middle">
+    <thead>
+      <tr>
+        <th>Meal</th>
+        <th>Price (RSD)</th>
+        <th>Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Svaki red ima klasu product-row, price i input qty -->
+      <tr class="product-row">
+        <td>Zucchini Bites 300g</td>
+        <td class="price">430</td>
+        <td><input type="number" class="form-control qty" min="0" value="0"></td>
+      </tr>
+      <tr class="product-row">
+        <td>Tomato and Basil Bruschetta 400g</td>
+        <td class="price">480</td>
+        <td><input type="number" class="form-control qty" min="0" value="0"></td>
+      </tr>
+      <tr class="product-row">
+        <td>Steak 500g</td>
+        <td class="price">1470</td>
+        <td><input type="number" class="form-control qty" min="0" value="0"></td>
+      </tr>
+      <tr class="product-row">
+        <td>Lasagna 800g</td>
+        <td class="price">1250</td>
+        <td><input type="number" class="form-control qty" min="0" value="0"></td>
+      </tr>
+      <tr class="product-row">
+        <td>Cinnamon Rolls 1kg</td>
+        <td class="price">1200</td>
+        <td><input type="number" class="form-control qty" min="0" value="0"></td>
+      </tr>
+      <tr class="product-row">
+        <td>Strawberry Shortcake 900g</td>
+        <td class="price">1700</td>
+        <td><input type="number" class="form-control qty" min="0" value="0"></td>
+      </tr>
+      <tr class="product-row">
+        <td>Chocolate Chip Cookies 700g</td>
+        <td class="price">950</td>
+        <td><input type="number" class="form-control qty" min="0" value="0"></td>
+      </tr>
+      <tr class="product-row">
+        <td>Belmuz 400g</td>
+        <td class="price">500</td>
+        <td><input type="number" class="form-control qty" min="0" value="0"></td>
+      </tr>
+      <tr class="product-row">
+        <td>Caramelized Onion Pasta 800g</td>
+        <td class="price">750</td>
+        <td><input type="number" class="form-control qty" min="0" value="0"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="row mt-3">
+  <div class="col-md-4">
+    <p>Number of meals: <strong id="totalItems">0</strong></p>
+    <p>Discount amount: <strong id="appliedDiscount">0 RSD</strong></p>
+    <p>Amount to pay: <strong id="totalAmount">0 RSD</strong></p>
+    <button class="btn btn-success" onclick="calculateTotal()">Order</button>
+  </div>
+</div>
+  </main>
+
+  <!-- Fiksni -->
+  <footer class="site-footer bg-dark text-white fst-italic fw-bold"> <!-- Nadebljan i nakrivljen text-->
+   <div class="container d-flex justify-content-between align-items-center">
+    <!-- Lijevo -->
+    <p class="mb-0">Contact: info@cozycooking.com</p>
+    
+    <!-- Desno -->
+    <div class="d-flex">
+      <p class="mb-0 me-3">AI25-2022 Petko Avram</p>
+      <p class="mb-0">AI17-2022 Andrea Vasilijic</p>
+    </div>
+  </div>
+  </footer>
+
+  <!-- Lightbox modal (koristi se na galeriji) -->
+  <div class="modal fade" id="lightboxModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 id="lightboxTitle" class="modal-title"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Zatvori"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img id="lightboxImage" src="" alt="" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS (CDN) + lokalni JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

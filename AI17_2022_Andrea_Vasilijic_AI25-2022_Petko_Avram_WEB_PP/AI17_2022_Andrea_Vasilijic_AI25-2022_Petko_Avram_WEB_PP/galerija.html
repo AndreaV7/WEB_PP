@@ -1,0 +1,188 @@
+<!--
+  Autori: Andrea Vasilijic AI17-2022, Petko Avram AI25-2022
+-->
+<!doctype html>
+<html lang="sr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cozy Cooking</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+  <!-- Bustrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Lokalni stilovi -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- Fiksna navigacija -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="assets/images/logo.png" width="40" alt="Logo" class="me-2">Cozy Cooking</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="onama.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="produkti.html">Orders</a></li>
+          
+          <li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" id="recipesDropdown" role="button" 
+     data-bs-toggle="dropdown" aria-expanded="false">
+    Recipes
+  </a>
+  <ul class="dropdown-menu" aria-labelledby="recipesDropdown">
+    <li><a class="dropdown-item" href="zucchinibites.html">Cheesy Garlic Zucchini Bites</a></li>
+    <li><a class="dropdown-item" href="bruschetta.html">Tomato and Basil Bruschetta</a></li>
+     <li><a class="dropdown-item" href="steak.html">Air Fryer Steak</a></li>
+    <li><a class="dropdown-item" href="lasagna.html">Easy Homemade Lasagna</a></li>
+    <li><a class="dropdown-item" href="cinnamonrolls.html">Extra Soft Cinnamon Rolls</a></li>
+    <li><a class="dropdown-item" href="cake.html">Strawberry Shortcake</a></li>
+    <li><a class="dropdown-item" href="cookies.html">Chocolate Chip Cookies</a></li>
+    <li><a class="dropdown-item" href="belmuz.html">Svrljiški Belmuž</a></li>
+    <li><a class="dropdown-item" href="pasta.html">Caramelized Onion Pasta</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="recepti.html">All Recipes</a></li>
+   
+  </ul>
+</li>
+
+          <li class="nav-item"><a class="nav-link" href="galerija.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container section-padding">
+
+<h2 class="blog-title">Explore our gallery!</h2>
+<p>Get inspired, get hungry, and see what makes our food special.</p>
+
+<div class="row fst-italic "> <!--Obojena pozadina i bijeli text-->
+
+  <div class="col-sm-6 col-md-4 mb-3 "> <!-- col-Kolona Bustrap,sm velicina ekrana, md velicina ekrana medium, mb margin bottom-->
+    <div class="gallery-thumb card" role="button">
+      <img src="assets/images/zucchini.jpg" alt="Zucchini Bites" class="img-fluid" data-large="assets/images/zucchini.jpg">
+      <div class="card-body"> <!--Ako hocemo da mjenjamo boju pozadine ovde promjenimo u card body kao boju iza texta -->
+        <p class="card-text text-center">Zucchini Bites</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-6 col-md-4 mb-3"> 
+    <div class="gallery-thumb card" role="button">
+      <img src="assets/images/bruschetta2.jpg" alt="Bruschetta" class="img-fluid" data-large="assets/images/bruschetta2.jpg">
+      <div class="card-body">
+        <p class="card-text text-center">Bruschetta</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-6 col-md-4 mb-3">
+    <div class="gallery-thumb card" role="button">
+      <img src="assets/images/steak.jpg" alt="Steak" class="img-fluid" data-large="assets/images/steak.jpg">
+      <div class="card-body">
+        <p class="card-text text-center">Steak</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-6 col-md-4 mb-3">
+    <div class="gallery-thumb card" role="button"> <!--Custom klasa gallery thumb-->
+      <img src="assets/images/lasagna2.jpg" alt="Lasagna" class="img-fluid" data-large="assets/images/lasagna2.jpg">
+      <div class="card-body">
+        <p class="card-text text-center">Lasagna</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-6 col-md-4 mb-3">
+    <div class="gallery-thumb card" role="button">
+      <img src="assets/images/rolls.jpg" alt="Cinnamon Rolls" class="img-fluid" data-large="assets/images/rolls.jpg">
+      <div class="card-body">
+        <p class="card-text text-center">Cinnamon Rolls</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-6 col-md-4 mb-3">
+    <div class="gallery-thumb card" role="button">
+      <img src="assets/images/strawberryshortcake.jpg" alt="Strawberry Shortcake" class="img-fluid" data-large="assets/images/strawberryshortcake.jpg"> <!--Bustrap klasa img flud-->
+      <div class="card-body">
+        <p class="card-text text-center">Strawberry Shortcake</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-6 col-md-4 mb-3">
+    <div class="gallery-thumb card" role="button">
+      <img src="assets/images/cookies3.jpg" alt="Chocolate Chip Cookies" class="img-fluid" data-large="assets/images/cookies3.jpg"> <!--Bustrap klasa img flud-->
+      <div class="card-body">
+        <p class="card-text text-center">Chocolate Chip Cookies</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-6 col-md-4 mb-3">
+    <div class="gallery-thumb card" role="button">
+      <img src="assets/images/belmuzz.jpg" alt="Belmuž" class="img-fluid" data-large="assets/images/belmuzz.jpg"> <!--Bustrap klasa img flud-->
+      <div class="card-body">
+        <p class="card-text text-center">Belmuž</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-6 col-md-4 mb-3">
+    <div class="gallery-thumb card" role="button">
+      <img src="assets/images/pasta3.jpg" alt="Onion Pasta" class="img-fluid" data-large="assets/images/pasta3.jpg"> <!--Bustrap klasa img flud-->
+      <div class="card-body">
+        <p class="card-text text-center">Onion Pasta</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+  </main>
+
+  <!-- Fiksni footer -->
+   <footer class="site-footer bg-dark text-white fst-italic fw-bold"> <!-- Nadebljan i nakrivljen text-->
+   <div class="container d-flex justify-content-between align-items-center">
+    <!-- Lijevo -->
+    <p class="mb-0">Contact: info@cozycooking.com</p>
+    
+    <!-- Desno -->
+    <div class="d-flex">
+      <p class="mb-0 me-3">AI25-2022 Petko Avram</p>
+      <p class="mb-0">AI17-2022 Andrea Vasilijic</p>
+    </div>
+  </div>
+  </footer>
+
+  <!-- Lightbox modal (koristi se na galeriji) -->
+  <div class="modal fade" id="lightboxModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 id="lightboxTitle" class="modal-title"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Zatvori"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img id="lightboxImage" src="" alt="" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS (CDN) + lokalni JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

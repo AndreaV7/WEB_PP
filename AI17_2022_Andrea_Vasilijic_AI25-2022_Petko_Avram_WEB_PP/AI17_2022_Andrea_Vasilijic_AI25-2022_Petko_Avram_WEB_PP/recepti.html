@@ -1,0 +1,196 @@
+<!--
+  Autori: Andrea Vasilijic AI17-2022, Petko Avram AI25-2022
+-->
+<!doctype html>
+<html lang="sr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cozy Cooking</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Lokalni stilovi -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- Fiksna navigacija -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+       <img src="assets/images/logo.png" width="40" alt="Logo" class="me-2">Cozy Cooking</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="onama.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="produkti.html">Orders</a></li>
+          
+          <li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" id="recipesDropdown" role="button" 
+     data-bs-toggle="dropdown" aria-expanded="false">
+    Recipes
+  </a>
+  <ul class="dropdown-menu" aria-labelledby="recipesDropdown">
+    <li><a class="dropdown-item" href="zucchinibites.html">Cheesy Garlic Zucchini Bites</a></li>
+    <li><a class="dropdown-item" href="bruschetta.html">Tomato and Basil Bruschetta</a></li>
+     <li><a class="dropdown-item" href="steak.html">Air Fryer Steak</a></li>
+    <li><a class="dropdown-item" href="lasagna.html">Easy Homemade Lasagna</a></li>
+    <li><a class="dropdown-item" href="cinnamonrolls.html">Extra Soft Cinnamon Rolls</a></li>
+    <li><a class="dropdown-item" href="cake.html">Strawberry Shortcake</a></li>
+    <li><a class="dropdown-item" href="cookies.html">Chocolate Chip Cookies</a></li>
+    <li><a class="dropdown-item" href="belmuz.html">Svrljiški Belmuž</a></li>
+    <li><a class="dropdown-item" href="pasta.html">Caramelized Onion Pasta</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="recepti.html">All Recipes</a></li>
+   
+  </ul>
+</li>
+
+          <li class="nav-item"><a class="nav-link" href="galerija.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container section-padding">
+
+<h2 class="blog-title">Discover our recipe collection</h2>
+<p>Delicious, simple, and made to share. Explore our favorite recipes - from comfort food classics to quick everyday meals. Easy to follow, always full of flavor.</p>
+
+<div class="row">
+  <div class="col-md-4 mb-3">
+    <div class="card h-100 recipepage-card">
+      <img src="assets/images/zucchini.jpg" class="card-img-top" alt="Zucchini Bites">
+      <div class="card-body">
+        <h5 class="card-title">Cheesy Garlic Zucchini Bites</h5>
+        <p class="card-text">Crispy, cheesy zucchini snacks.</p>
+        <a href="zucchinibites.html" class="btn btn-success">View more</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 mb-3">
+    <div class="card h-100 recipepage-card">
+      <img src="assets/images/bruschetta.jpg" class="card-img-top" alt="Bruschetta">
+      <div class="card-body">
+        <h5 class="card-title">Tomato and Basil Bruschetta</h5>
+        <p class="card-text">Simple, fresh, Mediterranean bite.</p>
+        <a href="bruschetta.html" class="btn btn-dark">View more</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 mb-3">
+    <div class="card h-100 recipepage-card">
+      <img src="assets/images/steak2.jpg" class="card-img-top" alt="Steak<">
+      <div class="card-body">
+        <h5 class="card-title">Air Fryer Steak</h5>
+        <p class="card-text">Perfectly cooked, no grill needed.</p>
+        <a href="steak.html" class="btn btn-primary">View more</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 mb-3">
+    <div class="card h-100 recipepage-card">
+      <img src="assets/images/lasagna.jpg" class="card-img-top" alt="Lasagna">
+      <div class="card-body">
+        <h5 class="card-title">Easy Homemade Lasagna</h5>
+        <p class="card-text">Cozy layers of cheese and sauce.</p>
+        <a href="lasagna.html" class="btn btn-success">View more</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 mb-3">
+    <div class="card h-100 recipepage-card">
+      <img src="assets/images/cinnamonrolls.jpg" class="card-img-top" alt="Cinnamon Rolls">
+      <div class="card-body">
+        <h5 class="card-title">Extra Soft Cinnamon Rolls</h5>
+        <p class="card-text">Melt-in-your-mouth cinnamon bliss.</p>
+        <a href="cinnamonrolls.html" class="btn btn-dark">View more</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 mb-3">
+    <div class="card h-100 recipepage-card">
+      <img src="assets/images/strawberryshortcake.jpg" class="card-img-top" alt="Strawberry Shortcake">
+      <div class="card-body">
+        <h5 class="card-title">Strawberry Shortcake</h5>
+        <p class="card-text">Classic dessert with a fresh twist.</p>
+        <a href="cake.html" class="btn btn-primary">View more</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 mb-3">
+    <div class="card h-100 recipepage-card">
+      <img src="assets/images/cookies3.jpg" class="card-img-top" alt="Chocolate Chip Cookies">
+      <div class="card-body">
+        <h5 class="card-title">Chocolate Chip Cookies</h5>
+        <p class="card-text">Golden, gooey, and perfectly sweet.</p>
+        <a href="cookies.html" class="btn btn-success">View more</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 mb-3">
+    <div class="card h-100 recipepage-card">
+      <img src="assets/images/belmuzz.jpg" class="card-img-top" alt="Belmuž">
+      <div class="card-body">
+        <h5 class="card-title">Svrljiški Belmuž</h5>
+        <p class="card-text">Simple ingredients, rich Balkan flavor.</p>
+        <a href="belmuz.html" class="btn btn-dark">View more</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 mb-3">
+    <div class="card h-100 recipepage-card">
+      <img src="assets/images/pasta2.jpg" class="card-img-top" alt="Pasta">
+      <div class="card-body">
+        <h5 class="card-title">Caramelized Onion Pasta</h5>
+        <p class="card-text">Comfort food with a gourmet twist.</p>
+        <a href="pasta.html" class="btn btn-primary">View more</a>
+      </div>
+    </div>
+  </div>
+</div>
+  </main>
+
+  <!-- Fiksni footer -->
+    <footer class="site-footer bg-dark text-white fst-italic fw-bold"> <!-- Nadebljan i nakrivljen text-->
+   <div class="container d-flex justify-content-between align-items-center">
+    <!-- Lijevo -->
+    <p class="mb-0">Contact: info@cozycooking.com</p>
+    
+    <!-- Desno -->
+    <div class="d-flex">
+      <p class="mb-0 me-3">AI25-2022 Petko Avram</p>
+      <p class="mb-0">AI17-2022 Andrea Vasilijic</p>
+    </div>
+  </div>
+  </footer>
+
+  <!-- Lightbox modal (koristi se na galeriji) -->
+  <div class="modal fade" id="lightboxModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 id="lightboxTitle" class="modal-title"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Zatvori"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img id="lightboxImage" src="" alt="" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS (CDN) + lokalni JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
